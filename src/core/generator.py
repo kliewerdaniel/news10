@@ -256,7 +256,7 @@ class NewsGenerator:
 
         try:
             self.logger.info("Generating audio for a new segment...")
-            communicate = edge_tts.Communicate(script, "en-US-JennyNeural")
+            communicate = edge_tts.Communicate(script, "en-US-MichelleNeural")
 
             audio_buffer = io.BytesIO()
             async for chunk in communicate.stream():
